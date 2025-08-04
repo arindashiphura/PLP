@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 2 - Enhanced HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 40px;
+        }
+
+        h2 {
+            color: #0066cc;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ol, ul, dl {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        img, video {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004a99;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ordered Lists</h2>
+    <ol>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ol>
+
+    <h2>Un-ordered Lists</h2>
+    <ul>
+        <li>Thursday</li>
+        <li>Friday</li>
+    </ul>
+
+    <h2>Definition Lists</h2>
+    <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>HyperText Markup Language - a language for creating web pages.</dd>
+    </dl>
+
+    <h2>Nested Lists</h2>
+    <ol>
+        <li>Frontend Languages
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend Languages
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Ruby</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Images</h2>
+    <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" 
+         alt="Picture of hot air balloon" 
+         width="500" 
+         height="300">
+
+    <h2>Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arinda</td>
+                <td>Male</td>
+                <td>Kenya</td>
+            </tr>
+            <tr>
+                <td>Favor</td>
+                <td>Male</td>
+                <td>Uganda</td>
+            </tr>
+            <tr>
+                <td>Judith</td>
+                <td>Female</td>
+                <td>South Africa</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Embedding Videos & Audio</h2>
+    <video width="500" height="300" controls>
+        <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Your browser does not support videos.
+    </video>
+
+    <audio controls>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <h2>Forms</h2>
+    <form action="location" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here...">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here...">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age here...">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+
+        <label for="cv">Upload CV:</label>
+        <input type="file" name="cv" id="cv">
+
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write your bio here..."></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
